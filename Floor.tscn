@@ -140,6 +140,18 @@ size = Vector3(4.085965, 7.2861023, 0.28955078)
 transform = Transform3D(0.9063097, 0, -0.42261916, 0, 1, 0, 0.42261916, 0, 0.9063097, -3.5826867, 3.2495294, -13.45246)
 size = Vector3(2.064972, 7.4745483, 0.28955078)
 
+[node name="CSGBox3D17" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.90630764, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, -0.90630764, 1.5918176, 2.8578787, -27.069363)
+size = Vector3(0.18917847, 8.222656, 10.531731)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.25881904, 0, 0.96592575, 0, 1, 0, -0.96592575, 0, 0.25881904, 8.126682, 2.8559237, -19.893532)
+size = Vector3(0.18917847, 8.222656, 18.358366)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.965673, 2.8549123, -14.149092)
+size = Vector3(0.18917847, 8.222656, 6.8932953)
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.99584764, -0.03893259, -0.08229219, -0.089484945, 0.2524038, 0.9634754, -0.01673904, 0.96683836, -0.2548396, 0, 61.149822, -22.168884)
 fov = 123.4
