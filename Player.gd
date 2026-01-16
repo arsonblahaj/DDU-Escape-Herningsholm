@@ -15,7 +15,7 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * SENS)
 		cam.rotate_x(-event.relative.y * SENS)
-		cam.rotation.x = clamp(cam.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+		cam.rotation.x = clamp(cam.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
