@@ -144,8 +144,8 @@ transform = Transform3D(0.9063097, 0, -0.42261916, 0, 1, 0, 0.42261916, 0, 0.906
 size = Vector3(2.064972, 7.4745483, 0.28955078)
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-0.90630764, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, -0.90630764, 1.5918176, 2.8578787, -27.069363)
-size = Vector3(0.18917847, 8.222656, 10.531731)
+transform = Transform3D(-0.90630764, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, -0.90630764, 0.49229896, 2.8578787, -24.711437)
+size = Vector3(0.18917847, 8.222656, 5.3283653)
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.25881904, 0, 0.96592575, 0, 1, 0, -0.96592575, 0, 0.25881904, 8.126682, 2.8559237, -19.893532)
@@ -155,5 +155,21 @@ size = Vector3(0.18917847, 8.222656, 18.358366)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.965673, 2.8549123, -14.149092)
 size = Vector3(0.18917847, 8.222656, 6.8932953)
 
+[node name="CSGBox3D20" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.9015378, 0, 0.43269926, 0, 1, 0, -0.43269926, 0, -0.9015378, -6.23577, 3.678691, -19.685822)
+size = Vector3(0.18917847, 6.8756866, 2.7887683)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.42603183, 0, -0.9047079, 0, 1, 0, 0.9047079, 0, -0.42603183, -16.472466, 3.7338734, -23.025291)
+size = Vector3(0.18917847, 6.8109436, 21.569668)
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.9129977, 0, -0.40796393, 0, 1, 0, 0.40796393, 0, 0.9129977, -9.665155, 3.5452657, -26.437403)
+size = Vector3(0.18917847, 6.9032173, 11.92491)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.91967064, 0, -0.39269024, 0, 1, 0, 0.39269024, 0, 0.91967064, -2.5733824, 3.5353785, -27.602526)
+size = Vector3(0.18917847, 6.8109436, 9.322685)
+
 [node name="Player" parent="." instance=ExtResource("1_wm4b4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 53.079483, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1766214, 0)
