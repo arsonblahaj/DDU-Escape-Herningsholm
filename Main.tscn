@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://4ynu5wtis3nc"]
 
-[ext_resource type="PackedScene" uid="uid://b2jco8n03037a" path="res://Player.tscn" id="1_wm4b4"]
+[ext_resource type="PackedScene" uid="uid://b2jco8n03037a" path="res://Player.tscn" id="1_glv2v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qbq3j"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -20,7 +20,7 @@ albedo_color = Color(0, 0.5458846, 0.8828397, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wm4b4"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Main" type="Node"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sr8py")
@@ -175,5 +175,5 @@ size = Vector3(0.18917847, 6.8109436, 9.322685)
 transform = Transform3D(0.8200518, 0.38588706, -0.42261827, -0.42577928, 0.90482706, 0, 0.38239646, 0.1799421, 0.90630776, 4.5247364, 1.4978338, -11.916996)
 size = Vector3(6.3545227, 0.37158203, 2.0734863)
 
-[node name="Player" parent="." instance=ExtResource("1_wm4b4")]
+[node name="Player" parent="." instance=ExtResource("1_glv2v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1766214, 0)
