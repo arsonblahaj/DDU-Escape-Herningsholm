@@ -63,7 +63,7 @@ operation = 2
 size = Vector3(47.034233, 22.789063, 23.328127)
 
 [node name="CSGCombiner3D2" type="CSGCombiner3D" parent="CSGCombiner3D"]
-transform = Transform3D(0.98, 0, 0, 0, 1, 0, 0, 0, 0.98, 0, 0.8389168, 0)
+transform = Transform3D(0.99, 0, 0, 0, 1.01, 0, 0, 0, 0.99, 0, 0.8389168, 0)
 operation = 2
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGCombiner3D2"]
@@ -169,8 +169,8 @@ transform = Transform3D(0.8200518, 0.38588706, -0.42261827, -0.42577928, 0.90482
 size = Vector3(6.3545227, 0.37158203, 2.0734863)
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(0.40837818, 0, 0.9128128, 0, 1, 0, -0.9128128, 0, 0.40837818, -15.134585, 1.9150391, 9.026443)
-size = Vector3(23.99971, 9.598145, 0.17919922)
+transform = Transform3D(0.40837818, 0, 0.9128128, 0, 1, 0, -0.9128128, 0, 0.40837818, -15.2749605, 1.9150391, 9.340212)
+size = Vector3(23.312233, 9.598145, 0.17919922)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.99992895, 0, 0.01192038, 0, 1, 0, -0.01192038, 0, 0.99992895, -24.919252, 3.3059628, 19.982277)
