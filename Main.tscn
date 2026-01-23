@@ -30,7 +30,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
 use_collision = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
@@ -175,5 +175,25 @@ size = Vector3(0.18917847, 6.8109436, 9.322685)
 transform = Transform3D(0.8200518, 0.38588706, -0.42261827, -0.42577928, 0.90482706, 0, 0.38239646, 0.1799421, 0.90630776, 4.5247364, 1.4978338, -11.916996)
 size = Vector3(6.3545227, 0.37158203, 2.0734863)
 
+[node name="CSGBox3D23" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.40837818, 0, 0.9128128, 0, 1, 0, -0.9128128, 0, 0.40837818, -15.007505, 1.9150391, 8.742392)
+size = Vector3(23.37735, 9.598145, 0.17919922)
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.99992895, 0, 0.01192038, 0, 1, 0, -0.01192038, 0, 0.99992895, -27.939713, 3.348602, 19.558348)
+size = Vector3(16.35445, 6.865387, 0.116363525)
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-1, 0, 6.978512e-05, 0, 1, 0, -6.978512e-05, 0, -1, -4.8983455, 3.4338531, 23.412607)
+size = Vector3(61.865555, 6.865387, 0.116363525)
+
+[node name="CSGBox3D26" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.051325105, 0, 0.99868196, 0, 1, 0, -0.99868196, 0, -0.051325105, -35.84359, 3.4397745, 22.203259)
+size = Vector3(17.373665, 6.8989563, 0.116363525)
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.05463648, 0, -0.9985063, 0, 1, 0, 0.9985063, 0, -0.05463648, 26.245308, 3.3033981, 21.34312)
+size = Vector3(18.509048, 7.147766, 0.116363525)
+
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1766214, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.878372, 2.1766214, 23.60325)
