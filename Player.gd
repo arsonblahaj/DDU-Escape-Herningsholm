@@ -25,6 +25,15 @@ func _input(event: InputEvent) -> void:
 		
 	
 func _physics_process(delta: float) -> void:
+	
+	if %ShapeCast3D.is_colliding():
+		var target = %ShapeCast3D.get_collider(0)
+		if target.has_method("interact"):
+			$CanvasLayer/BoxContainer/Label.show()
+			if Input.is_action_just_pressed("interact"):
+				target.interact()
+		else:
+			$CanvasLayer/BoxContainer/Label.hide()
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

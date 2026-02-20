@@ -200,12 +200,12 @@ size = Vector3(0.07519531, 7.757263, 7.4965286)
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.005375, 2.1766214, 23.60325)
 
-[node name="Item" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90411234, 0)
 script = ExtResource("2_uu6xs")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Item"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 mesh = SubResource("BoxMesh_r0du0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Item"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_cm0pq")
