@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://4ynu5wtis3nc"]
+[gd_scene load_steps=64 format=3 uid="uid://4ynu5wtis3nc"]
 
 [ext_resource type="PackedScene" uid="uid://b2jco8n03037a" path="res://Scenes/Player.tscn" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://d366xfse0021" path="res://Scenes/Key.tscn" id="2_idj7w"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cm782dtwi2wyx" path="res://Scenes/chair.tscn" id="8_50glp"]
 [ext_resource type="FontFile" uid="uid://bqsx3ogjxmk3y" path="res://Assests/KGTeacherJordan.ttf" id="9_vy5pj"]
 [ext_resource type="PackedScene" uid="uid://0y282decmd5m" path="res://Assests/realistic-blackboard/source/Blackboard/Blackboard.gltf" id="10_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://bd4bcvvwqs2wt" path="res://exit_sign.tscn" id="10_hwpts"]
 [ext_resource type="Script" uid="uid://bp87wjwu7amn5" path="res://Scenes/math.gd" id="11_2w5on"]
 [ext_resource type="FontFile" uid="uid://dp04eljp61df0" path="res://Assests/Chalk Board.ttf" id="12_erwvk"]
 [ext_resource type="Resource" uid="uid://cabqixjcpp6xw" path="res://key_2.tres" id="12_grg3l"]
@@ -21,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://bsi5fbw12arc8" path="res://Scenes/clock.tscn" id="19_0sclb"]
 [ext_resource type="Script" uid="uid://df863ohis4kys" path="res://Scripts/list.gd" id="20_sxkr1"]
 [ext_resource type="PackedScene" uid="uid://cn0cwycaaa0pj" path="res://Assests/wet_floor_sign.tscn" id="21_fq0cl"]
+[ext_resource type="Script" uid="uid://dmoi3rktb6i0f" path="res://Scenes/area_3d.gd" id="23_jyqft"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qbq3j"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -148,6 +150,16 @@ size = Vector2(0.48, 0.627)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_0sclb"]
 size = Vector2(0.55, 0.892)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fq0cl"]
+size = Vector2(2.475, 0.965)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3tgeq"]
+size = Vector3(12.288513, 7.3901367, 8.354858)
+
+[sub_resource type="LabelSettings" id="LabelSettings_c4ay3"]
+font = ExtResource("9_vy5pj")
+font_size = 75
 
 [node name="Main" type="Node"]
 
@@ -328,7 +340,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.766453, 2.8744454, 16.353
 size = Vector3(0.07519531, 7.757263, 7.4965286)
 
 [node name="Player" parent="." instance=ExtResource("1_kln2b")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.3884335, 2.467051, -20.018827)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.14043617, 2.467051, 10.053303)
 
 [node name="Key" parent="." instance=ExtResource("2_idj7w")]
 transform = Transform3D(0.012633749, 0.17612389, 0.093918964, 0.19130522, -0.037532598, 0.044650022, 0.05694479, 0.08701545, -0.17083794, -6.3191023, 2.85749, -13.964759)
@@ -342,48 +354,6 @@ key_resource_needed = ExtResource("3_pbw6q")
 
 [node name="Locker" parent="." instance=ExtResource("6_346fj")]
 transform = Transform3D(-2.1855694e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855694e-10, -29.27592, 0.65002346, 33.962032)
-
-[node name="Locker" parent="Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
-
-[node name="Locker" parent="Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
 
 [node name="Locker2" parent="Locker" instance=ExtResource("6_346fj")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 9732.178, -1.2234344, 11712.498)
@@ -598,6 +568,9 @@ shape = SubResource("ConcavePolygonShape3D_c4ay3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.160083, 0)
 mesh = SubResource("BoxMesh_fq0cl")
 
+[node name="exit sign" parent="Walls" instance=ExtResource("10_hwpts")]
+transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, -0.53699815, 6.933312, -36.589733)
+
 [node name="Room_1" type="Node3D" parent="."]
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room_1"]
@@ -737,7 +710,7 @@ key_resource_needed = ExtResource("12_grg3l")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0157, 0.65002155, -16.590263)
 
 [node name="Clock" parent="." instance=ExtResource("19_0sclb")]
-transform = Transform3D(3.821371e-15, -8.742278e-08, -2, -2, -8.742278e-08, 0, -8.742278e-08, 2, -8.742278e-08, -0.16203487, 10.935896, -36.69203)
+transform = Transform3D(2.0000002, 0, 0, 0, -8.742278e-08, -2.0000002, 0, 2, -8.7422784e-08, -0.4819889, 8.4878025, -36.546425)
 
 [node name="Node3D" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.633936, 1.7961304, -33.31291)
@@ -756,3 +729,123 @@ script = ExtResource("20_sxkr1")
 
 [node name="wet_floor_sign" parent="." instance=ExtResource("21_fq0cl")]
 transform = Transform3D(2.7635295, 0, 2.8918686, 0, 4, 0, -2.8918686, 0, 2.7635295, -6.3116503, 1.8909274, -13.997759)
+
+[node name="Locker7" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855708e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855708e-10, -28.999851, 0.47729987, -0.7956581)
+
+[node name="Locker" parent="Locker7" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker" parent="Locker7/Locker" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker" parent="Locker7/Locker/Locker" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker" parent="Locker7/Locker/Locker/Locker" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker6" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855703e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855703e-10, -29.082672, 0.529117, 9.631649)
+
+[node name="Locker" parent="Locker6" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker" parent="Locker6/Locker" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker5" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.18557e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.18557e-10, -29.137886, 0.5636617, 16.583187)
+
+[node name="Locker" parent="Locker5" instance=ExtResource("6_346fj")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 695.1538, -4.3180923, 5.5214844)
+
+[node name="Locker4" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855699e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855699e-10, -29.165493, 0.58093405, 20.058956)
+
+[node name="Locker8" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855698e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855698e-10, -29.1931, 0.5982064, 23.534725)
+
+[node name="Locker3" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855696e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855696e-10, -29.220707, 0.61547875, 27.010494)
+is_miller_locker = true
+
+[node name="Locker2" parent="." instance=ExtResource("6_346fj")]
+transform = Transform3D(-2.1855695e-10, 0, 0.005, 0, 0.004, 0, -0.005, 0, -2.1855695e-10, -29.248314, 0.6327511, 30.486263)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, -1, 4.371139e-08, 0, -4.371139e-08, -1, 1, -4.371139e-08, 1.9106855e-15, -11.095993, 3.5056918, -23.535118)
+mesh = SubResource("PlaneMesh_fq0cl")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="Label3D" type="Label3D" parent="MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.011452675, 0.058374405, -0.03856516)
+modulate = Color(0, 0, 0, 1)
+text = "\"Two brothers chase in a circle of twelve,
+One is stout and slow, the other lean and swift.
+To find the path where the secrets dwell,
+Take the leader's weight and strip away the runner's distance.
+What remains is the key to the iron door.\""
+font = ExtResource("9_vy5pj")
+font_size = 27
+outline_size = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.89559543, 0, 0.44486958, 0, 1, 0, -0.44486958, 0, -0.89559543, 29.78344, 0.6523528, -10.762415)
+mesh = SubResource("PlaneMesh_fq0cl")
+
+[node name="Label3D" type="Label3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.9130354, 0.058374524, -0.014104843)
+modulate = Color(0, 0, 0, 1)
+text = "Miller"
+outline_size = 0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.99909794, 0.0005198343, 0.04246391, -0.00013008242, 0.9999579, -0.009180673, -0.042466894, 0.009166869, 0.99905586, 0, 8.341391, -28.371853)
+light_color = Color(0.9999998, 0.9558589, 0.9981138, 1)
+light_energy = 16.0
+shadow_enabled = true
+spot_range = 9.610317
+spot_angle = 8.826303
+
+[node name="Area3D" type="Area3D" parent="." node_paths=PackedStringArray("win_ui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -42.282475)
+script = ExtResource("23_jyqft")
+win_ui = NodePath("CanvasLayer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28341293, 3.1950684, 0.2536316)
+shape = SubResource("BoxShape3D_3tgeq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Area3D"]
+process_mode = 3
+visible = false
+
+[node name="Label" type="Label" parent="Area3D/CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 216.0
+offset_right = 32.0
+offset_bottom = 239.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "You Win"
+label_settings = SubResource("LabelSettings_c4ay3")
+
+[node name="Button" type="Button" parent="Area3D/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.5
+offset_top = -15.5
+offset_right = 32.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Restart"
+
+[connection signal="pressed" from="Area3D/CanvasLayer/Button" to="Area3D" method="_on_button_pressed"]

@@ -10,5 +10,5 @@ item_name = "key_2"
 icon = ExtResource("1_usltp")
 item_id = 2
 mesh_to_spa = ExtResource("2_i0ikh")
-item_color = Color(0, 1, 1, 1)
+item_color = Color(0, 4.415934, 4.415934, 1)
 metadata/_custom_type_script = "uid://dptmheuxf1nuy"

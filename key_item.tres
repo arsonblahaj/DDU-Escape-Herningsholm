@@ -9,5 +9,5 @@ script = ExtResource("3_xixbo")
 item_name = "Key"
 icon = ExtResource("1_lp36f")
 mesh_to_spa = ExtResource("2_7fg6e")
-item_color = Color(1, 0, 0, 1)
+item_color = Color(0, 4.415934, 0, 1)
 metadata/_custom_type_script = "uid://dptmheuxf1nuy"

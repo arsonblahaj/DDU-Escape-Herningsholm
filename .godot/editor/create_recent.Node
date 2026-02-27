@@ -1,2 +1,9 @@
+Button
+Label
+CanvasLayer
+CollisionShape3D
+Area3D
+StaticBody3D
 SpotLight3D
+Label3D
 MeshInstance3D

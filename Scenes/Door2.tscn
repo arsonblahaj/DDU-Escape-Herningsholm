@@ -1,8 +1,9 @@
-[gd_scene load_steps=21 format=4 uid="uid://bu4w4o1wbc4dv"]
+[gd_scene load_steps=22 format=4 uid="uid://bu4w4o1wbc4dv"]
 
 [ext_resource type="Script" uid="uid://bfp28e0fyvr6c" path="res://Scenes/door_2.gd" id="1_ms8jy"]
 [ext_resource type="Material" uid="uid://dmn587fwtbxqi" path="res://Assests/wooden-door/textures/Door_Wood_Mat.tres" id="2_o3wnr"]
 [ext_resource type="Material" uid="uid://bq8no67xlkkat" path="res://Assests/wooden-door/textures/Door_Frame_Mat.tres" id="3_blub5"]
+[ext_resource type="FontFile" uid="uid://bqsx3ogjxmk3y" path="res://Assests/KGTeacherJordan.ttf" id="4_o3wnr"]
 [ext_resource type="AudioStream" uid="uid://b62eq47nkwyw1" path="res://sounds/door_close.wav" id="4_yqr1f"]
 [ext_resource type="AudioStream" uid="uid://dumcovumbhl75" path="res://sounds/door_open.wav" id="5_yxy7g"]
 [ext_resource type="AudioStream" uid="uid://bs4n1saqq2tog" path="res://sounds/locked_door.wav" id="7_ejvsi"]
@@ -157,20 +158,48 @@ sync_to_physics = false
 transform = Transform3D(-0.34202006, 0, 0.93969285, 0, 1, 0, -0.93969285, 0, -0.34202006, 1.9225429, 1.5404286, 1.6029143)
 button_color = Color(0, 0, 1, 1)
 
+[node name="Label3D" type="Label3D" parent="Door pivot/Animatebody3d/Keypad4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.058704138)
+modulate = Color(0, 0, 0, 1)
+text = "1"
+font = ExtResource("4_o3wnr")
+font_size = 59
+
 [node name="Keypad2" parent="Door pivot/Animatebody3d" instance=ExtResource("8_u6ke2")]
 transform = Transform3D(-0.34202006, 0, 0.93969285, 0, 1, 0, -0.93969285, 0, -0.34202006, 1.8879424, 0.7951646, 1.6308384)
 button_id = 2
 button_color = Color(1, 0, 0, 1)
 
+[node name="Label3D" type="Label3D" parent="Door pivot/Animatebody3d/Keypad2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0043931007, 0.05420196)
+modulate = Color(0, 0, 0, 1)
+text = "2"
+font = ExtResource("4_o3wnr")
+font_size = 59
+
 [node name="Keypad3" parent="Door pivot/Animatebody3d" instance=ExtResource("8_u6ke2")]
 transform = Transform3D(-0.34202006, 0, 0.93969285, 0, 1, 0, -0.93969285, 0, -0.34202006, 1.5742575, 1.5560017, 0.7571435)
-button_id = 3
+button_id = 4
 button_color = Color(0, 1, 0, 1)
+
+[node name="Label3D" type="Label3D" parent="Door pivot/Animatebody3d/Keypad3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.063169956)
+modulate = Color(0, 0, 0, 1)
+text = "4"
+font = ExtResource("4_o3wnr")
+font_size = 59
 
 [node name="Keypad" parent="Door pivot/Animatebody3d" instance=ExtResource("8_u6ke2")]
 transform = Transform3D(-0.34202006, 0, 0.93969285, 0, 1, 0, -0.93969285, 0, -0.34202006, 1.570431, 0.7841983, 0.75321305)
-button_id = 4
+button_id = 3
 button_color = Color(1, 1, 0, 1)
+
+[node name="Label3D" type="Label3D" parent="Door pivot/Animatebody3d/Keypad"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024629354, 0, 0.07416952)
+modulate = Color(0, 0, 0, 1)
+text = "3"
+font = ExtResource("4_o3wnr")
+font_size = 59
 
 [node name="MovingDoor" type="CollisionShape3D" parent="Door pivot/Animatebody3d"]
 transform = Transform3D(0.93935215, 0, 0.34295502, 0, 1, 0, -0.34295502, 0, 0.93935215, 1.5596836, 0.06986189, 1.2211804)
