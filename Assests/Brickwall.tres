@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://dsp6l01rd8fxt"]
+
+[ext_resource type="Texture2D" uid="uid://dnyhks2jygb2x" path="res://Assests/Brick/Poliigon_BrickWallReclaimed_8320_BaseColor.jpg" id="1_n5myb"]
+[ext_resource type="Texture2D" uid="uid://i7kipxoksmwo" path="res://Assests/Brick/Poliigon_BrickWallReclaimed_8320_AmbientOcclusion.jpg" id="2_d44v6"]
+[ext_resource type="Texture2D" uid="uid://buvns2khc47qo" path="res://Assests/Brick/Poliigon_BrickWallReclaimed_8320_Metallic.jpg" id="3_q2cey"]
+[ext_resource type="Texture2D" uid="uid://b3rq6nmfghm08" path="res://Assests/Brick/Poliigon_BrickWallReclaimed_8320_Normal.png" id="4_jcvih"]
+[ext_resource type="Texture2D" uid="uid://dh6xyth0f6qsq" path="res://Assests/Brick/Poliigon_BrickWallReclaimed_8320_Roughness.jpg" id="5_dr283"]
+
+[resource]
+albedo_texture = ExtResource("1_n5myb")
+metallic = 1.0
+metallic_texture = ExtResource("3_q2cey")
+roughness_texture = ExtResource("5_dr283")
+normal_enabled = true
+normal_texture = ExtResource("4_jcvih")
+ao_enabled = true
+ao_texture = ExtResource("2_d44v6")
+heightmap_scale = -10.175
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true

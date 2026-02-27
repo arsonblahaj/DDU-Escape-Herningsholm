@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bex1s6usv1snf"]
+
+[ext_resource type="Script" uid="uid://djws6mbxn7e3e" path="res://Scripts/slot.gd" id="1_vqo0j"]
+
+[node name="ItemSlot" type="Button"]
+custom_minimum_size = Vector2(80, 80)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_icon = true
+script = ExtResource("1_vqo0j")

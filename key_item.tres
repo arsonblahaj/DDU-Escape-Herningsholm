@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://c5q0t1e2345mk"]
+
+[ext_resource type="Texture2D" uid="uid://b0f2qlwtaydxp" path="res://Assests/old-key/image-from-rawpixel-id-6258290-png.png" id="1_lp36f"]
+[ext_resource type="PackedScene" uid="uid://cofxju0pjtuai" path="res://Assests/old-key/source/Old Key.fbx" id="2_7fg6e"]
+[ext_resource type="Script" uid="uid://dptmheuxf1nuy" path="res://items/item_data.gd" id="3_xixbo"]
+
+[resource]
+script = ExtResource("3_xixbo")
+item_name = "Key"
+icon = ExtResource("1_lp36f")
+mesh_to_spa = ExtResource("2_7fg6e")
+item_color = Color(1, 0, 0, 1)
+metadata/_custom_type_script = "uid://dptmheuxf1nuy"

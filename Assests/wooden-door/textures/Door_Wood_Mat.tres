@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dmn587fwtbxqi"]
+
+[ext_resource type="Texture2D" uid="uid://duflql1k6gufs" path="res://Assests/wooden-door/textures/Material.001_albedo.jpg" id="1_vocq7"]
+[ext_resource type="Texture2D" uid="uid://chhifouawntw0" path="res://Assests/wooden-door/textures/Material.001_AO.jpg" id="2_3j0xp"]
+[ext_resource type="Texture2D" uid="uid://dv2dh76o8uqjs" path="res://Assests/wooden-door/textures/Material.001_normal.jpg" id="3_ocke7"]
+[ext_resource type="Texture2D" uid="uid://c5rpli05etsg4" path="res://Assests/wooden-door/textures/Material.001_roughness.jpg" id="4_8x8fy"]
+
+[resource]
+albedo_texture = ExtResource("1_vocq7")
+roughness_texture = ExtResource("4_8x8fy")
+normal_enabled = true
+normal_texture = ExtResource("3_ocke7")
+ao_enabled = true
+ao_texture = ExtResource("2_3j0xp")

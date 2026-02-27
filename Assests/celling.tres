@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://c8ld3347whyr6"]
+
+[ext_resource type="Texture2D" uid="uid://cpftucqtp1r4" path="res://Assests/celling/Poliigon_PlasterPainted_7664_BaseColor.jpg" id="1_htelu"]
+[ext_resource type="Texture2D" uid="uid://bh614mr20trwp" path="res://Assests/celling/Poliigon_PlasterPainted_7664_AmbientOcclusion.jpg" id="2_1ogv2"]
+[ext_resource type="Texture2D" uid="uid://de07f2klsyx6w" path="res://Assests/celling/Poliigon_PlasterPainted_7664_Metallic.jpg" id="3_uiqjt"]
+[ext_resource type="Texture2D" uid="uid://clgvt3xcg32rc" path="res://Assests/celling/Poliigon_PlasterPainted_7664_Normal.png" id="4_piqga"]
+[ext_resource type="Texture2D" uid="uid://ddy1nlnca86w0" path="res://Assests/celling/Poliigon_PlasterPainted_7664_Roughness.jpg" id="5_br73l"]
+
+[resource]
+albedo_texture = ExtResource("1_htelu")
+metallic = 1.0
+metallic_texture = ExtResource("3_uiqjt")
+roughness_texture = ExtResource("5_br73l")
+normal_enabled = true
+normal_texture = ExtResource("4_piqga")
+ao_enabled = true
+ao_texture = ExtResource("2_1ogv2")
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 103.96822
+uv1_world_triplanar = true
