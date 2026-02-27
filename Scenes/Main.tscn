@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://4ynu5wtis3nc"]
+[gd_scene load_steps=59 format=3 uid="uid://4ynu5wtis3nc"]
 
 [ext_resource type="PackedScene" uid="uid://b2jco8n03037a" path="res://Scenes/Player.tscn" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://d366xfse0021" path="res://Scenes/Key.tscn" id="2_idj7w"]
@@ -138,6 +138,10 @@ size = Vector3(1, 8.455, 10)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_c4ay3"]
 data = PackedVector3Array(-0.5, 4.2275, 5, 0.5, 4.2275, 5, -0.5, -4.2275, 5, 0.5, 4.2275, 5, 0.5, -4.2275, 5, -0.5, -4.2275, 5, 0.5, 4.2275, -5, -0.5, 4.2275, -5, 0.5, -4.2275, -5, -0.5, 4.2275, -5, -0.5, -4.2275, -5, 0.5, -4.2275, -5, 0.5, 4.2275, 5, 0.5, 4.2275, -5, 0.5, -4.2275, 5, 0.5, 4.2275, -5, 0.5, -4.2275, -5, 0.5, -4.2275, 5, -0.5, 4.2275, -5, -0.5, 4.2275, 5, -0.5, -4.2275, -5, -0.5, 4.2275, 5, -0.5, -4.2275, 5, -0.5, -4.2275, -5, 0.5, 4.2275, 5, -0.5, 4.2275, 5, 0.5, 4.2275, -5, -0.5, 4.2275, 5, -0.5, 4.2275, -5, 0.5, 4.2275, -5, -0.5, -4.2275, 5, 0.5, -4.2275, 5, -0.5, -4.2275, -5, 0.5, -4.2275, 5, 0.5, -4.2275, -5, -0.5, -4.2275, -5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fq0cl"]
+material = ExtResource("8_4kpch")
+size = Vector3(79.76, 1, 90.895)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_bmxlf"]
 size = Vector2(0.48, 0.627)
@@ -462,6 +466,15 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5
 mesh = SubResource("BoxMesh_vy5pj")
 skeleton = NodePath("../MeshInstance3D")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Walls/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 28.34967, 10.668519, 2.6385918)
+light_color = Color(1.353, 0.939, 0.78, 1)
+light_energy = 9.78
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 45.768906
+spot_angle = 79.579605
+
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="Walls"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.575, 0, 36.356)
 shape = SubResource("ConcavePolygonShape3D_vy5pj")
@@ -580,6 +593,10 @@ mesh = SubResource("BoxMesh_jyqft")
 [node name="CollisionShape3D17" type="CollisionShape3D" parent="Walls"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.26836228, 10.698226, -37.191658)
 shape = SubResource("ConcavePolygonShape3D_c4ay3")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.160083, 0)
+mesh = SubResource("BoxMesh_fq0cl")
 
 [node name="Room_1" type="Node3D" parent="."]
 
